@@ -1,0 +1,7 @@
+//configure git 
+git config --global user.name <name>
+git config --global user.email <email>
+//initiate git 
+git init 
+// getting status 
+git status 
