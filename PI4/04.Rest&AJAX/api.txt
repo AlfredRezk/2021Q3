@@ -1,0 +1,25 @@
+AMAZON.COM
+
+1. users
+2. products
+3. cart
+4. Auth
+
+1. users 
+GET   http://amazon.com/users               // Get all users
+GET   http://amazon.com/users/156236        // Get a specific user
+POST  http://amazon.com/users  + data       //Adding user
+PUT   http://amazon.com/users/156236 +data  // update a user
+DELETE http://amazon.com/users/156236       //delete a user
+
+2. products
+GET   http://amazon.com/products               // Get all users
+GET   http://amazon.com/products/156236        // Get a specific user
+POST  http://amazon.com/products  + data       //Adding user
+PUT   http://amazon.com/products/156236 +data  // update a user
+DELETE http://amazon.com/products/156236       //delete a user
+
+3. Auth 
+
+POST  http://amazon.com/auth/login
+GET   http://amazon.com/auth/logout
