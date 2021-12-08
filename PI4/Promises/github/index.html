@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="conatiner">
+    GitHub username: <input type="text" id="username" /> <br/>
+    Repo: Repo: <input type="text" id="repo" /><br />
+    <button onclick="loadCommits()">Load Commits</button>
+    <ul id="commits"></ul>
+
+  </div>
+  <script>
+
+    async function loadCommits(){
+      const username = document.getElementById('username').value;
+      const repo = document.getElementById('repo').value;
+      const ul = document.getElementById('commits');
+      const url = `https://api.github.com/repos/${username}/${repo}/commits`;
+
+      // fetch(url)
+      // .then(res=> res.json())
+      // .then(data=> {
+        
+   
+      //   data.forEach(commit=>{
+      //     ul.innerHTML +=`<li> ${commit.commit.author.name} : ${commit.commit.message}</li>`
+      //   }) 
+
+      // })
+      // .catch(err=> console.log(err))
+
+     try{
+       let res = await fetch(url)
+       let data = await res.json();
+
+       data.forEach(commit => {
+         ul.innerHTML += `<li> ${commit.commit.author.name} : ${commit.commit.message}</li>`
+       })
+
+     }catch(err){
+       console.log(err)
+     }
+     
+    }
+
+  </script>
+</body>
+
+</html>
