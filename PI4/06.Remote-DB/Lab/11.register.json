@@ -1,0 +1,14 @@
+{
+  "username": "guest",
+  "password": "guest",
+  "_kmd": {
+    "lmt": "2021-12-12T01:25:50.652Z",
+    "ect": "2021-12-12T01:25:50.652Z",
+    "llt": "2021-12-12T01:25:50.687Z",
+    "authtoken": "837f0e52-d0ca-405b-9df9-1f72be72dbc5.IB1QCTXMte9bqtTcy5P/t/qnx4oJ+qhpqFqJ+lN7SWo="
+  },
+  "_id": "61b54f9e24c7390017e4bbc4",
+  "_acl": {
+    "creator": "61b54f9e24c7390017e4bbc4"
+  }
+}
