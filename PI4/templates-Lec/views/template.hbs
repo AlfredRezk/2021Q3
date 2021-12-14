@@ -1,0 +1,20 @@
+{{>navbar}}
+
+<div class="container"> 
+  <div class="row">
+    {{#each users}}
+      <div class="col-4 mb-3 shadow">
+        <div class="card">
+          <img class="card-img-top" src="{{picture.large}}" >
+          <div class="card-body">
+          <h5 class="card-title">{{name.first}} {{name.last}}</h5>
+            <p class="card-text"> Phone: {{cell}}</p>
+            <p class="card-text"> Email: {{email}}</p>
+            <p class="card-text"> Location: {{location.country}}</p>
+            <a href="#" class="btn btn-primary">More</a>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+</div>
