@@ -1,0 +1,12 @@
+h1{
+  color: white;
+}
+
+body{
+  background-color: indigo;
+}
+
+img#output {
+  width:240px; 
+  height: 240px;
+}
