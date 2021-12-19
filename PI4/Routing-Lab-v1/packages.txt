@@ -1,0 +1,12 @@
+handlebars
+jquery
+sammy 
+
+//-> dev 
+webpack 
+webpack-cli
+webpack-dev-server
+babel-loader
+@babel/core
+@babel/preset-env
+html-webpack-plugin
