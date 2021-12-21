@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+  <a class="navbar-brand" href="#">Furniture Store</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav mr-auto">
+
+
+      <li class="nav-item {{#if homeActive}} active{{/if}}">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      
+      {{#if loggedIn}}
+      <li class="nav-item {{#if createActive}} active{{/if}}">
+        <a class="nav-link" href="/create">Add</a>
+      </li>
+      <li class="nav-item {{#if profileActive}} active{{/if}}">
+        <a class="nav-link" href="/profile">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">Logout</a>
+      </li>
+
+
+      {{else}}
+      <li class="nav-item {{#if loginActive}} active{{/if}}">
+        <a class="nav-link" href="/login">Login</a>
+      </li>
+      <li class="nav-item {{#if signupActive}} active{{/if}}">
+        <a class="nav-link" href="/signup">Signup</a>
+      </li>
+      {{/if}}
+      
+      
+
+    </ul>
+  </div>
+</nav>
