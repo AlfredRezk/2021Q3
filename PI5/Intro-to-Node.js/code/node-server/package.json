@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "start":"nodemon routing.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
