@@ -1,0 +1,19 @@
+
+<div class="mt-5 text-center">
+  <h1> {{header}}</h1>
+  <h2>Start adding Notes <a href="/notes" class="btn btn-primary"> ADD </a> </h2>
+
+<div class="row mt-5">
+{{#each notes}}
+<div class="col-3">
+  <div class="card">
+    <div class="card-body">
+      <h1 class="text-dark">{{this}}</h1>
+    </div>
+  </div>
+</div>
+{{/each}}
+
+</div>
+</div>
+ 

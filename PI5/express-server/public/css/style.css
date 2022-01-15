@@ -1,0 +1,5 @@
+body{
+  background:linear-gradient(45deg, indigo, purple, white );
+  color: white;
+  height: 100vh;
+}
