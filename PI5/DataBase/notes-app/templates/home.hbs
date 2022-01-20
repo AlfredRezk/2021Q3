@@ -1,0 +1,25 @@
+
+<div class="mt-5 text-center">
+  <h1> {{header}}</h1>
+  <h2>Start adding Notes <a href="/notes" class="btn btn-primary"> ADD </a> </h2>
+
+<div class="row mt-5">
+{{#each notes}}
+<div class="col-3">
+  <div class="card">
+    <div class="card-body">
+       <img src="{{imageUrl}}" alt="" class="img-fluid">
+      <h1 class="text-dark">{{this.text}}</h1>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+
+      <a href="/edit/{{_id}}" class="btn btn-warning text-light"> <span class="material-icons">edit </span> </a>
+      <a href="/delete/{{_id}}" class="btn btn-danger text-light"><span class="material-icons" > delete_forever </span></a>
+    </div>
+  </div>
+</div>
+{{/each}}
+
+</div>
+</div>
+ 
