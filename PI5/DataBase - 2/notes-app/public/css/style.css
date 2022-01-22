@@ -1,0 +1,13 @@
+body{
+  background:linear-gradient(45deg, indigo, purple, white );
+  color: white;
+  height: 100vh;
+}
+
+.delete_icon{
+  color:red
+}
+
+.edit_icon{
+  color:goldenrod
+}
