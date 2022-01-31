@@ -1,0 +1,33 @@
+<h1>Login Form</h1>
+<div class="form">
+  <form action='/login' method="POST">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" value="{{username}}">
+    <label for="password">Password</label>
+    <div id="password-field">
+    <input type="password" id="password" name="password" value="{{password}}">
+    <i class="fa fa-eye-slash" id="show-icon"></i>
+    </div>
+    <input type="submit" value="Login">
+  </form>
+  <p class="text-center"> Forger your Password ? <a href="/reset" class="link"> Reset Password </a></p>
+  <p class="text-center"> Don't have an account <a href="/register" class="link"> Register Here</a></p>
+</div>
+{{>notifications}}
+
+<script>
+
+  const icon = document.getElementById('show-icon');
+  const password = document.getElementById('password');
+
+  icon.addEventListener('mousedown', ()=>{
+    console.log('mouse down')
+    password.setAttribute('type', 'text')
+  })
+
+  icon.addEventListener('mouseup', ()=>{
+     console.log('mouse up')
+    password.setAttribute('type', 'password')
+  })
+
+</script>

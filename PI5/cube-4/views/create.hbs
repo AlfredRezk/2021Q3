@@ -1,0 +1,28 @@
+<h1> {{#if editMode}}Edit{{else}}Create{{/if}}</h1>
+<div class="form">
+
+	<form action="{{#if editMode}}/edit/{{cube._id}}{{else}}/create{{/if}}" method="POST" enctype="multipart/form-data">
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name" value="{{cube.name}}"/>
+		<label for="name">Description</label>
+		<textarea id="name" name="description">{{cube.description}} </textarea>
+
+		<input type="file" id="image" name="imageUrl" style="display: none;"/>
+    <div class="text-center">
+      <button class="btn" type="button" id="image-btn"> Add Image</button>
+    </div>
+		<label for="difficulty">Difficulty</label>
+		<select id="difficulty" name="difficultyLevel">
+		{{#each options}}
+    <option value="{{level}}" {{#if selected}} selected {{/if}}> {{desc}}</option>
+    {{/each}}
+		</select>
+		<input type="submit" value="{{#if editMode}} Edit {{else}} Create {{/if}}" />
+	</form>
+</div>
+
+<script>
+  document.getElementById('image-btn').addEventListener('click', ()=>{
+    document.getElementById('image').click()
+  })
+</script>
