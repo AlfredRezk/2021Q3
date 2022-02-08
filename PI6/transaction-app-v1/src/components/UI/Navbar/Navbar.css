@@ -1,0 +1,19 @@
+.navbar{
+  background: linear-gradient(white, #ccc);
+  box-shadow:  0 2px 10px rgba(0,0,0,0.7);
+}
+
+.navbar a{
+  text-decoration: none;
+}
+
+.navbar .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h3{
+  font-size: 1.5rem;
+  color:#333;
+}

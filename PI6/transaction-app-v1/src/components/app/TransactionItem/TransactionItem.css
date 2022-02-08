@@ -1,0 +1,27 @@
+.trans-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem 0 ;
+  background-color: #f3f3f3;
+}
+
+.trans-item .desc{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex:1;
+  margin-left: 2rem;
+}
+
+.trans-item .price{
+  font-size: 1rem;
+  font-weight: bold;
+  width: 70px;
+  text-align: center;
+  padding: 0.54rem;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+}
