@@ -1,0 +1,22 @@
+{
+    "name": "name",
+    "description": "description",
+    "authors": "author",
+    "version": "1.0.0",
+    "main": "pathToMain",
+    "scripts": {
+      "start":"nodemon index.js"
+    },
+    "dependencies": {
+        "bcryptjs": "*",
+        "body-parser": "*",
+        "cookie-parser": "*",
+        "cors": "*",
+        "express": "*",
+        "jsonwebtoken": "*",
+        "mongoose": "*"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
