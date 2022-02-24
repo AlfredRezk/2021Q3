@@ -1,0 +1,63 @@
+.card{
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  padding: 2rem;
+  max-width:500px;
+  margin: 1rem auto;
+  background-color: #f5f5f5;
+}
+
+.card input{
+  width: 100%;
+  height: 35px;
+  font-size: 16px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 7px;
+
+}
+
+.card input:focus{
+  border: 2px solid dodgerblue;
+  padding: 15px;
+  background-color: #dcedfd;
+}
+
+.card button{
+  border: none;
+  font-size: 1rem;
+  margin-top: 1rem;
+  background-color: dodgerblue;
+  padding: 0.5rem 1rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s ease-in-out;
+
+}
+
+.card button:hover{
+    background-color: #1e66af;
+}
+
+.card button:active{
+  transform: scale(0.9);
+
+}
+
+.card button:disabled{
+  background-color: #ccc;
+  cursor: not-allowed;
+
+}
+
+.card input.invalid {
+    border: 2px solid red;
+    background-color: #fae0e0;
+    
+}
+
+.card p{
+  color: red;
+  font-size: 14px;
+}
