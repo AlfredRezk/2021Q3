@@ -1,0 +1,14 @@
+.theme {
+  height: 100vh;
+
+}
+
+.dark {
+  background-color: #333;
+  color: white;
+}
+
+.light{
+  background-color: #ddd;
+  color: black;
+}
